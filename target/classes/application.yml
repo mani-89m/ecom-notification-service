@@ -1,0 +1,23 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: us-east-1
+      auto: false
+    credentials:
+      access-key: ANUJDEKAVADIYAEXAMPLE
+      secret-key: 2QvM4/Tdmf38SkcD/qalvXO4EXAMPLEKEY
+    queue:
+      uri: http://localhost:4566
+      name: order-info
+    s3:
+      url: http://s3.localhost.localstack.cloud:4566
+      bucket-name: order-receipts
+
+server:
+  port: 9700
+
+spring:
+  application:
+    name: ecom-notification-service
